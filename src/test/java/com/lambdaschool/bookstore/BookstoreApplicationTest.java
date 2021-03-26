@@ -34,7 +34,6 @@ public class BookstoreApplicationTest
         if (System.getenv(envvar) == null)
         {
             stop = true;
-            System.out.println("***** Environment Variable " + envvar + " Not Found *****");
         }
     }
 
@@ -52,8 +51,8 @@ public class BookstoreApplicationTest
         if (!stop)
         {
             // so run the application!
-            SpringApplication.run(BookstoreApplicationTest.class,
-                                  args);
+            SpringApplication.run(BookstoreApplication.class,
+                args);
         }
     }
 }
